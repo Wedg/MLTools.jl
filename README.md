@@ -16,8 +16,10 @@ The ROC plot is built with the function:
 As well as the ROC curve of the predictor, the plot shows the model's accuracy, true positive rate, and false positive rate as well as the summary statistic AUC (Area Under Curve).
 
 The plot will look something like this.
-________
-![](demo/roc.png)
+
+<p align="center">
+  <img src="demo/roc.png" width="500"/>
+</p>
   
   
 ## Confusion Matrix
@@ -39,4 +41,7 @@ plot_confusion_matrix(y_cond, y_pred, "Truth", "Prediction", classes)
 ```
 
 And produces this plot
-![](demo/cmp.png)
+
+<p align="center">
+  <img src="demo/cmp.png" width="500"/>
+</p>
