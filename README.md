@@ -39,5 +39,4 @@ plot_confusion_matrix(y_cond, y_pred, "Truth", "Prediction", classes)
 ```
 
 And produces this plot
-
 ![](demo/cmp.png)
