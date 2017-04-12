@@ -1,9 +1,9 @@
 # MLTools.jl
 Utilities for Machine Learning
 
-# ROC Curve
+## ROC Curve
 ![](demo/roc.png)
 
 
-# Confusion Matrix
+## Confusion Matrix
 ![](demo/cmp.png)
