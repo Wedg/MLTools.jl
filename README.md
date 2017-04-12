@@ -18,7 +18,7 @@ As well as the ROC curve of the predictor, the plot shows the model's accuracy, 
 The plot will look something like this.
 
 <p align="center">
-  <img src="demo/roc.png" width="500"/>
+  <img src="demo/roc1.png" width="500"/>
 </p>
   
   
