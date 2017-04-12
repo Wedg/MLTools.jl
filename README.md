@@ -1,5 +1,5 @@
 # MLTools.jl
-Utilities for Machine Learning
+Utilities for Machine Learning in Julia
 
 To use, run the command:
 ```jlcon
