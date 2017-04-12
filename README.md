@@ -13,7 +13,9 @@ The ROC plot is built with the function:
   `y_cond` is the "truth" vector with each element either `0` or `1`.  
   `y_prob` is the hypothesis vector with each element a probability in the range `[0, 1]`.
   
- As well as the ROC curve of the predictor, the plot shows the model's accuracy, true positive rate, and false positive rate as well as the summary statistic AUC (Area Under Curve).
+As well as the ROC curve of the predictor, the plot shows the model's accuracy, true positive rate, and false positive rate as well as the summary statistic AUC (Area Under Curve).
+
+The plot will look something like this:
   
 ![](demo/roc.png)
   
