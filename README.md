@@ -2,8 +2,8 @@
 Utilities for Machine Learning
 
 # ROC Curve
-![](demo/roc.jpg)
+![](demo/roc.png)
 
 
 # Confusion Matrix
-![](demo/cmp.jpg)
+![](demo/cmp.png)
