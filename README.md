@@ -16,6 +16,7 @@ The ROC plot is built with the function:
 As well as the ROC curve of the predictor, the plot shows the model's accuracy, true positive rate, and false positive rate as well as the summary statistic AUC (Area Under Curve).
 
 The plot will look something like this.
+________
 ![](demo/roc.png)
   
   
