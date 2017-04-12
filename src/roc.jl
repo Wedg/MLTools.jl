@@ -9,26 +9,26 @@ function plot_ROC_curve(y_cond::Vector{Int}, y_prob::Vector{Float64})
 
     # Number of plot points
     points = 1001
-    max = points-1
+    max = points - 1
 
     # Calculate TPR and FPR for varied discrimination
     TPR, FPR = zeros(points), zeros(points)
     for d = 0:1:max
         TP, FP = 0, 0
         for i=1:population
-            if y_prob[i] >= (max-d)/max
-                y_cond[i] == 1 ? TP +=1 : FP += 1
+            if y_prob[i] >= (max - d) / max
+                y_cond[i] == 1 ? TP += 1 : FP += 1
             end
         end
-        TPR[d+1] = TP / cond_pos
-        FPR[d+1] = FP / cond_neg
+        TPR[d + 1] = TP / cond_pos
+        FPR[d + 1] = FP / cond_neg
     end
 
     # Accuracy
     TP, FP = 0, 0
-    for i=1:population
+    for i = 1:population
         if y_prob[i] >= 0.5
-            y_cond[i] == 1 ? TP +=1 : FP += 1
+            y_cond[i] == 1 ? TP += 1 : FP += 1
         end
     end
     TPR1 = TP / cond_pos
@@ -38,7 +38,7 @@ function plot_ROC_curve(y_cond::Vector{Int}, y_prob::Vector{Float64})
     # AUC
     AUC = 0
     for i=2:length(TPR)
-        AUC += (TPR[i] + TPR[i-1]) * 0.5 * (FPR[i] - FPR[i-1])
+        AUC += (TPR[i] + TPR[i - 1]) * 0.5 * (FPR[i] - FPR[i - 1])
     end
     AUC = round(AUC, 2)
     df2 = DataFrame(x = [0.65], y = [0.3], label = "AUC = $AUC")
